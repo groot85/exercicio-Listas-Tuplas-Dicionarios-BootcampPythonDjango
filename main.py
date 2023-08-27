@@ -1,10 +1,31 @@
 #Exercícios: Listas, Tuplas e Dicionários
 
-#1. "Faça um Programa que peça as quatro notas de 10 alunos, calcule e armazene numa lista a média de cada aluno, imprima o número de alunos com média maior ou igual a 7.0.
+#1.Faça um Programa que peça as quatro notas de 10 alunos, calcule e armazene numa lista a média de cada aluno, imprima o número de alunos com média maior ou igual a 7.0.
 
+#legenda: a = aluno  no= nota 
 
+listaNotas = [] #medias dos alunos
+notasAluno = [] 
+media_seteoumais = 0
 
+print ('Calculando as notas dos Alunos e quantos estão acima de 7'+'\n')
 
+for a in range(3):
+  media = 0
+  notasAluno = []
+  print ('Aluno: ' + str(a + 1))
+  
+  for no in range(4):
+    notasAluno.append(float(input('Nota: ' + str(no+1) + '\n')))
+    media += notasAluno[no]
+  print ("A sua nota total é:",media)
+  media /= 4
+  listaNotas.append(media)
+  if media >= 7:
+        media_seteoumais += 1
+print("\nResultados finais:")
+print(f"\nAs médias dos alunos são:",listaNotas)
+print(f"\n{media_seteoumais} alunos tiveram média maior ou igual a 7.")
 
 
 #2. Programa nome ao contrário em maiúsculas. Faça um programa que permita ao usuário digitar o seu nome e em seguida mostre o nome do usuário de trás para frente utilizando somente letras maiúsculas. Dica: lembre−se que ao informar o nome o usuário pode digitar letras maiúsculas ou minúsculas.
