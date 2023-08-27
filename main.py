@@ -2,15 +2,15 @@
 
 #1.Faça um Programa que peça as quatro notas de 10 alunos, calcule e armazene numa lista a média de cada aluno, imprima o número de alunos com média maior ou igual a 7.0.
 
-#legenda: a = aluno  no= nota 
+#legenda: a = aluno range 10 quantidade de alunos  no= nota range 4 quantidade de notas  listaNotas = [] serão guardadas as medias dos alunos
 
-listaNotas = [] #medias dos alunos
+listaNotas = []
 notasAluno = [] 
 media_seteoumais = 0
 
 print ('Calculando as notas dos Alunos e quantos estão acima de 7'+'\n')
 
-for a in range(3):
+for a in range(10):
   media = 0
   notasAluno = []
   print ('Aluno: ' + str(a + 1))
@@ -29,6 +29,13 @@ print(f"\n{media_seteoumais} alunos tiveram média maior ou igual a 7.")
 
 
 #2. Programa nome ao contrário em maiúsculas. Faça um programa que permita ao usuário digitar o seu nome e em seguida mostre o nome do usuário de trás para frente utilizando somente letras maiúsculas. Dica: lembre−se que ao informar o nome o usuário pode digitar letras maiúsculas ou minúsculas.
+
+print ("Digite o seu nome e veja o programa deixá-lo escrito ao contrário e com todas as letras maiúsculas. Para ver a mágica acontecer, digite o seu nome utilizando letras maiúsculas ou minúsculas e após dar o 'enter' aguarde a mágica!")
+
+nome_orig = (input("\nDigite o seu nome:"))
+maiusculo = nome_orig.upper()
+inv_maiusculo = maiusculo[::-1]
+print("Pronto: esse é o seu nome com todas as letras maiúsculas e invertido:",inv_maiusculo)
 
 #3. Escreva um programa em Python que onde todos os valores em um dicionário são emitidos. Se sim , imprima True. Caso contrário, imprima Falso.
 
