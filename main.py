@@ -39,6 +39,20 @@ print("Pronto: esse é o seu nome com todas as letras maiúsculas e invertido:",
 
 #3. Escreva um programa em Python que onde todos os valores em um dicionário são emitidos. Se sim , imprima True. Caso contrário, imprima Falso.
 
+#estrutura do dicionario: dicionario = {'Chave': 'Valor'}
+
+dicionario = {}
+dicionario ['maca'] = 'é uma fruta'
+dicionario ['carro'] = 'é um veículo'
+dicionario ['cachorro'] = 'é um animal'
+dicionario.pop("carro")
+print(dicionario)
+
+if "carro" in dicionario:
+    print("True")
+else:
+    print("Falso")
+
 #4. "Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime. 
 #As perguntas são:
 #""Telefonou para a vítima?""
@@ -47,5 +61,6 @@ print("Pronto: esse é o seu nome com todas as letras maiúsculas e invertido:",
 #""Devia para a vítima?""
 #"Já trabalhou com a vítima?""
 
-
 #O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como ""Suspeita"", entre 3 e 4 como ""Cúmplice"" e 5 como ""Assassino"". Caso contrário, ele será classificado como ""Inocente"".
+
+print("Você está sendo investigado a respeito de um crime. Em cada uma das perguntas, responda 1 para SIM, 2 para NÃO e em seguida saberemos qual o seu envolvimento"):
